@@ -7,7 +7,7 @@ load_dotenv(override=True)
 api_key = os.getenv("GROQ_API_KEY")
 print("FINAL KEY:", repr(api_key))
 if not api_key:
-    raise Exception("❌ GROQ_API_KEY not found in .env")
+    raise Exception(" GROQ_API_KEY not found in .env")
 client = Groq(api_key=api_key)
 app = Flask(__name__)
 CORS(app)
